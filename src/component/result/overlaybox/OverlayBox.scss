@@ -1,0 +1,30 @@
+.image-wrapper {
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    svg {
+        height: auto;
+        background-color: #222;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 100%;
+        image {
+            display: block;
+        }
+        .label-bacground {
+            opacity: 0;
+            display: none;
+        }
+        .boundary {
+            &:hover {
+                stroke-width: 10px;
+                opacity: 1;
+            }
+
+            &:hover + text {
+                    font-size: 5rem;
+                    font-weight: bold;
+            }
+        }
+    }
+}

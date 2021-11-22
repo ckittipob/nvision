@@ -1,0 +1,16 @@
+.object-selector-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+
+    .object-selector {
+        margin: 0 0.8rem;
+        cursor: pointer;
+        i {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}

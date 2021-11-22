@@ -1,0 +1,54 @@
+@keyframes fade-in {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+
+    }
+    to {
+        background-color: none;
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes pop-bar {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+.object-list-wrapper {
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 2rem;
+    .object-item {
+        margin: 0.8rem 0;
+        animation-name: fade-in;
+        animation-duration: 0.5s;
+        .item-label {
+            display: flex;
+            justify-content: space-between;
+            color: #aaa;
+            cursor: default;
+        }
+        .confidence {
+            width: 100%;
+            background-color: #ccc;
+            border-radius: 0.5rem;
+            .progress {
+                animation-name: pop-bar;
+                animation-duration: 1s;
+                height: 10px;
+                background-color: green;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
+

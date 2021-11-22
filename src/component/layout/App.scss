@@ -1,0 +1,55 @@
+// General Styles
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.app-container {
+    margin-top: 3.7rem;
+}
+
+.loading-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3.7rem);
+
+    i {
+        background: -webkit-linear-gradient(rgba(140,35,98,1), rgba(234,24,119,1));
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.main-btn {
+    background: linear-gradient(90deg,rgba(140,35,98,1), rgba(234,24,119,1));
+    display: block;
+    padding: 1rem 2rem;
+    margin : 0.5rem 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(90deg,rgba(140,35,98,1), rgba(140,35,98,1))   
+    }
+}
+
+

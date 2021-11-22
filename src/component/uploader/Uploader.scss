@@ -1,0 +1,49 @@
+.dropzone-wrapper {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3.7rem);
+}
+
+.dropzone-container {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+
+    position: relative;
+    .dropzone-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 300px;
+        .dropzone-text{
+            i{
+                padding-bottom: 1rem;
+            }
+            color: #aaa;
+        }
+    }
+
+}
+
+.detect-button {
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(140,35,98,1) 0%, rgba(234,24,119,1) 100%);
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(270deg, rgba(234,24,119,1) 0%, rgba(234,24,119,1) 100%);;
+    }
+}
+
+.dropzone-container-active {
+    background: linear-gradient(90deg, rgba(140,35,98,1) 0%, rgba(234,24,119,1) 100%);
+    .dropzone-text{
+        color: #fff!important;
+    }
+}
+
